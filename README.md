@@ -1,4 +1,4 @@
-<h1>DOCKER </h1>
+   <p align="center"><h1>DOCKER </h1></p>
 
 Docker is an open-source containerization platform used to build, ship,
 and run applications in lightweight containers.
