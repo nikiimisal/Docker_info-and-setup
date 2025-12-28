@@ -25,6 +25,7 @@ So the app runs the same way everywhere—on your laptop, servers, or cloud.
 - Donated to CNCF: 2017
 
 👉 Docker became open-source, and the container ecosystem became popular.
+
 --------------------------------------------------
 
 ## Key Docker Components
@@ -89,11 +90,12 @@ A container is a lightweight, isolated environment in which:
   - Runs applications faster with less resources
 
 
-  All of this is bundled into a single package.
+All of this is bundled into a single package.
   
-  ❌ A container does not have a full operating system.<br>
-  ✅ It shares the host machine’s kernel.
+❌ A container does not have a full operating system.<br>
+✅ It shares the host machine’s kernel.
 
+<br>
 
 
 - Shares the host OS kernel
@@ -110,7 +112,7 @@ A container is a lightweight, isolated environment in which:
 
 --------------------------------------------------
 
-Container vs Virtual Machine (VM)
+## Container vs Virtual Machine (VM)
 
 | Feature        | Container      | Virtual Machine |
 | -------------- | -------------- | --------------- |
@@ -124,7 +126,7 @@ Container vs Virtual Machine (VM)
 
 --------------------------------------------------
 
-DOCKER ARCHITECTURE
+## DOCKER ARCHITECTURE
 
 0. End User
 
@@ -142,7 +144,7 @@ DOCKER ARCHITECTURE
 
 --------------------------------------------------
 
-What Is DOCKER IMAGE
+## What Is DOCKER IMAGE.?
 
 
 A Docker Image is:
@@ -164,7 +166,7 @@ Container = Object
 
 --------------------------------------------------
 
-WHat IS DOCKER CONTAINER
+## WHAT IS DOCKER CONTAINER
 
 A container is a running instance of an image.
 
@@ -180,7 +182,7 @@ You can run multiple containers from one image.
 
 --------------------------------------------------
 
-DOCKERFILE(How image is built)
+## DOCKERFILE (How image is built)
 
 A text file containing instructions to build an image
 
@@ -200,7 +202,7 @@ Steps:
    
 --------------------------------------------------
 
-DOCKER WORKFLOW (End-to-End)
+## DOCKER WORKFLOW (End-to-End)
 
 1. Write application code
 2. Create Dockerfile
@@ -211,7 +213,7 @@ DOCKER WORKFLOW (End-to-End)
 
 --------------------------------------------------
 
-ADVANTAGES OF DOCKER
+## ADVANTAGES OF DOCKER
 
 ✅ Portability <br>
 ✅ Faster deployment<br>
@@ -222,6 +224,4 @@ ADVANTAGES OF DOCKER
 
 --------------------------------------------------
 
-SUMMARY
-Docker is a platform that uses containers to package applications with
-all dependencies, ensuring they run reliably across different environments.
+
