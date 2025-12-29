@@ -1,4 +1,9 @@
  <h1 align="center"> DOCKER</h1>
+ 
+- [Overview](#example-0)
+- [Docker-Setup](#example-1)
+
+<a id="example-0"></a>
 
 Docker is an open-source containerization platform used to build, ship,
 and run applications in lightweight containers.
@@ -14,6 +19,11 @@ A container packages:
 - configuration files
 
 So the app runs the same way everywhere—on your laptop, servers, or cloud.
+
+
+| **Docker-Workflow**    | **How its work**          |
+|--------------------------------|------------------------------------|
+| ![VS](https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/docker%20workflow.png?raw=true) | ![AWS](https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/d%20work.png?raw=true) |
 
 --------------------------------------------------
 ## 📌 Who created Docker?
@@ -125,7 +135,7 @@ All of this is bundled into a single package.
 👉 Docker containers are NOT virtual machines
 
   <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/containers_vs_vm.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 --------------------------------------------------
@@ -229,6 +239,8 @@ Steps:
 --------------------------------------------------
 ---
 ---
+<a id="example-1"></a>
+
  <h1 align="center"> DOCKER SETUP</h1>
 
 We can directly launch an EC2 instance by going to the AWS Console just for `practice`.<br>
