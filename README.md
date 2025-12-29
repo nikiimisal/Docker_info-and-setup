@@ -124,6 +124,10 @@ All of this is bundled into a single package.
 
 👉 Docker containers are NOT virtual machines
 
+  <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
 --------------------------------------------------
 
 ## DOCKER ARCHITECTURE
@@ -166,7 +170,7 @@ Container = Object
 
 --------------------------------------------------
 
-## WHAT IS DOCKER CONTAINER
+## WHAT IS DOCKER CONTAINER .?
 
 A container is a running instance of an image.
 
@@ -223,5 +227,161 @@ Steps:
 ✅ DevOps & CI/CD ready<br>
 
 --------------------------------------------------
+---
+---
+ <h1 align="center"> DOCKER SETUP</h1>
+
+We can directly launch an EC2 instance by going to the AWS Console just for `practice`.<br>
+
+But as a `Best practice`, instead of doing it manually, we should launch EC2 using Infrastructure as Code tools like Terraform (or similar tools) that are used to create infrastructure.
+
+  <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+---
+
+- For better understanding, let’s change the hostname and assume we are working inside a Docker container.
+
+```
+sudo hostnamectl hostname Docker
+```
+- Switching to the root user.
+
+```
+  sudo -i
+```
+- Update the system
+
+```
+yum update
+```
+- install the docker
+
+```
+yum install docker -y
+```
+
+ <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+---
+
+- After that, start the Docker service, enable it, and verify its status.
+
+  ```
+  systemctl start docker
+  systemctl enable docker
+  systemctl status docker
+  ```
+
+ <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+---
+
+- Check docker version
+- Docker default directory
+- Check whether images are available on your local machine. ( To list out the images )
+
+```
+docker --version
+cd /var/lib/docker/
+docker images
+
+```
+   <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+---
+
+- Then run this command
+
+```
+docker run nginx
+```
+When the command was executed, the output showed that no image was found locally.<br>
+So Docker started pulling the image from the Docker Hub registry.  
+
+ <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+---
+
+
+
+
+The container has started, but I am not able to enter commands because the previous command is<br>
+running in the Docker foreground. The terminal got stuck.<br>
+We want the container to run in the background, so here is the command.
+
+```
+docker run -d nginx
+```
+
+- List out the running state container Command
+- List out the images
+- list out the all containers  ( -a represent all )
+
+```
+docker ps
+docker images
+docker ps -a
+```
+
+
+ <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+---
+
+- Previously, to access the server, we opened a browser and entered the public IP address to view the Nginx page.
+- Now it is not visible because the concept of `port mapping` comes into play here.
+- Verify by entering the IP address in a web browser.
+- Stop and remove the previous container before running with container port mapping.
+
+
+```
+docker ps -a
+docker stop b4f 160
+docker ps -a
+docker rm b4f 160
+docker ps -a
+```
+
+Here is the command for port mapping. Now, verify that the Nginx page is visible in the browser.
+```
+docker run -d -p 80:80 --name mynginx nginx
+docker ps 
+```
+
+ <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+ <p align="center">
+  <img src="" width="500" alt="Initialize Repository Screenshot">
+</p>
+
+---
+
+---
+---
+
+
+
+
+
+
+
+
+
+
+
 
 
