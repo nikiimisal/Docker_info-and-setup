@@ -20,10 +20,9 @@ A container packages:
 
 So the app runs the same way everywhere—on your laptop, servers, or cloud.
 
-
-| **Docker-Workflow**    | **How its work**          |
-|--------------------------------|------------------------------------|
-| ![VS](https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/docker%20workflow.png?raw=true) | ![AWS](https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/d%20work.png?raw=true) |
+| **Docker-Workflow** | **How it works** |
+|--------------------|-----------------|
+| <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/docker%20workflow.png?raw=true" width="400"/> | <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/d%20work.png?raw=true" width="400"/> |
 
 --------------------------------------------------
 ## 📌 Who created Docker?
@@ -248,7 +247,7 @@ We can directly launch an EC2 instance by going to the AWS Console just for `pra
 But as a `Best practice`, instead of doing it manually, we should launch EC2 using Infrastructure as Code tools like Terraform (or similar tools) that are used to create infrastructure.
 
   <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/Screenshot%202025-12-29%20080908.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 ---
@@ -275,7 +274,7 @@ yum install docker -y
 ```
 
  <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/Screenshot%202025-12-29%20081233.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 ---
@@ -289,7 +288,7 @@ yum install docker -y
   ```
 
  <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/Screenshot%202025-12-29%20081424.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 ---
@@ -305,7 +304,7 @@ docker images
 
 ```
    <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/Screenshot%202025-12-29%20081816.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 ---
@@ -319,7 +318,7 @@ When the command was executed, the output showed that no image was found locally
 So Docker started pulling the image from the Docker Hub registry.  
 
  <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/Screenshot%202025-12-29%20083959.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 ---
@@ -347,7 +346,7 @@ docker ps -a
 
 
  <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/Screenshot%202025-12-29%20090212.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 ---
@@ -373,11 +372,11 @@ docker ps
 ```
 
  <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/Screenshot%202025-12-29%20092107.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
  <p align="center">
-  <img src="" width="500" alt="Initialize Repository Screenshot">
+  <img src="https://github.com/nikiimisal/Docker_info-and-setup/blob/main/img/Screenshot%202025-12-29%20092210.png?raw=true" width="500" alt="Initialize Repository Screenshot">
 </p>
 
 ---
