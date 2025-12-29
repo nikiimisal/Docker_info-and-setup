@@ -104,20 +104,8 @@ All of this is bundled into a single package.
 ❌ A container does not have a full operating system.<br>
 ✅ It shares the host machine’s kernel.
 
-<br>
 
 
-- Shares the host OS kernel
-- Does not include a full operating system
-- Runs applications faster with less resources
-
-<br>
-
- In container packages:
-
-- your application
-- all required libraries & dependencies
-- configuration files
 
 --------------------------------------------------
 
