@@ -2,6 +2,7 @@
  
 - [Overview](#example-0)
 - [Docker-Setup](#example-1)
+- [Some Command's](#example-2)
 
 <a id="example-0"></a>
 
@@ -372,12 +373,170 @@ docker ps
 ---
 ---
 
+<a id="example-2"></a>
+
+ <h1 align="center"> COMMAND'S</h1>
+
+###  🔹 Docker Installation & Service Setup
+
+```
+yum update
+# Update all system packages
+
+yum install docker -y
+# Install Docker using yum package manager
+
+systemctl start docker
+# Start Docker service
+
+systemctl enable docker
+# Enable Docker to start automatically on system boot
+
+systemctl status docker
+# Check Docker service status
+
+docker --version
+# Verify Docker installation and check version
+
+
+```
+
+---
+
+### 🔹 Docker Directory Check 
+
+```
+cd /var/lib/docker/
+# Navigate to Docker's default data directory
+
+ls
+# List Docker internal files and directories
+
+
+```
+
+---
+
+### 🔹 Docker Images & Containers 
+
+```
+docker images
+# List all Docker images available locally
+
+docker run nginx
+# Pull nginx image (if not present) and run container in foreground
+
+docker run -d nginx
+# Run nginx container in detached (background) mode
+```
+
+---
+
+###  🔹 Container Status Commands
+
+```
+docker ps
+# Show currently running containers
+
+docker ps -a
+# Show all containers (running + stopped)
+```
+
+---
+
+### 🔹 Stop & Remove Containers
+
+```
+
+docker stop 827
+# Stop container with ID starting with 827
+
+docker rm 827 543
+# Remove stopped containers with IDs 827 and 543
+
+docker rm -f 5ec
+# Force remove running container with ID 5ec
+------------------------------------------------------------------------------
+
+docker rm -f $(docker ps -aq)
+# Stop and remove all containers forcefully
+
+--------------------------------------------------------------------------------
+docker images
+# List all images
+
+docker rmi $(docker images -aq)
+# Remove all Docker images
+```
+
+---
+
+### 🔹 Run Container with Port Mapping
+
+```
+docker run -d -p 80:80 --name mynginx nginx
+# Run nginx container in background
+# Map host port 80 to container port 80
+# Assign container name as "mynginx"
+```
+
+---
+
+###  🔹 Automatic Port Mapping
+
+```
+docker run -d -P nginx
+# Run nginx container with automatic port mapping
+
+docker run -dP httpd
+# Run Apache (httpd) container with auto port mapping
+```
+
+---
+
+### 🔹 Execute Commands Inside Running Container
+
+```
+docker exec -it 4e3 pwd
+# Print current working directory inside container
+
+docker exec -it 4e3 whoami
+# Show current user inside container
+
+docker exec -it 4e3 ls
+# List files inside container
+
+docker exec -it 4e3 /bin/bash
+# Login into container shell interactively
+```
+
+---
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+---
+---
 
 
 
