@@ -428,6 +428,20 @@ docker run nginx
 
 docker run -d nginx
 # Run nginx container in detached (background) mode
+
+
+# This command has three parts. They are combined into one for single-step execution, or you can run them separately.
+docker run nginx
+
+i.
+docker pull nginx    # image pull's
+
+ii.
+docker create nginx   # images create
+
+iii.
+docker start nginx    # images start
+
 ```
 
 ---
@@ -471,7 +485,9 @@ docker rmi $(docker images -aq)
 
 ---
 
-### 🔹 Run Container with Port Mapping
+### 🔹 Run Container with Port Mapping 
+
+> `p` `manually Port assign` & `P` `Dynamic Port Assignment`
 
 ```
 docker run -d -p 80:80 --name mynginx nginx
@@ -508,6 +524,36 @@ docker exec -it 4e3 ls
 
 docker exec -it 4e3 /bin/bash
 # Login into container shell interactively
+```
+
+```
+docker exec -it 4e3 /bin/bash     # Enter the running container shell
+
+cd /usr/share/nginx/html/         # Go to Nginx default web directory
+
+ls                                # List files in current directory
+
+cat /etc/os-release               # Check OS inside the container
+
+apt update                        # Update package index inside container
+
+apt install nano -y               # Install nano editor inside container
+
+nano index.html                   # Edit Nginx default web page
+
+curl http://localhost             # Test Nginx page from inside container
+
+exit                              # Exit from container shell
+
+docker ps                         # List running containers
+
+docker ps -a                      # List all containers
+
+docker images                     # List Docker images
+
+docker stop <container_id>        # Stop running container
+
+docker rm <container_id>          # Remove stopped container
 ```
 
 ---
