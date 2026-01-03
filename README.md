@@ -443,7 +443,26 @@ iii.
 docker start nginx    # images start
 
 ```
+---
+### 🔹 From Image → Container
 
+```
+docker run <image>                # Create & start a container from an image
+
+docker run -d <image>             # Run container in detached (background) mode
+
+docker run -it <image> /bin/bash  # Run container interactively with shell
+
+docker run -d -p 80:80 <image>    # Run container with port mapping
+```
+
+### 🔹 From Container → Image
+
+```
+docker commit <container_id> <new_image_name>  # Create a new image from a container
+
+docker export <container_id> -o container.tar  # Export container filesystem as a tar file
+```
 ---
 
 ###  🔹 Container Status Commands
